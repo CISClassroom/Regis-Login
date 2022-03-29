@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.logo-login {
+  width: 50%;
+  height: 100%;
+  right: 49%;
+
+  text-align: center;
+  position: absolute;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 128px;
+
+  color: #000000;
+}
+.home-login {
+  padding: 9%;
+  position: absolute;
+  width: 32%;
+  height: 65%;
+  left: 50%;
+  top: 0%;
+
+  background: #523e7d;
+}
+.signUserPass {
+  width: 80%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+
+  color: #ffffff;
+}
+.text-sign, .link-forgot{
+    display: inline;
+}
+.text-sign{
+    float: left;
+}
+.link-forgot{
+    font-size: 20px;
+    color: #ffffff;
+    float: right;
+}
+.box-login {
+  width: 80%;
+  height: 5%;
+  left: 20%;
+  top: 28%;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 30px;
+  line-height: 65px;
+
+  background: #ffffff;
+  border-radius: 30px;
+  outline: none;
+}
+.btn-signin {
+  width: 53%;
+  height: 7%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+
+  position: absolute;
+  background: #523e7d;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.text-signup{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    
+    color: #FFFFFF;
+}
+.link-signup{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    
+    color: #FFFFFF;
+}

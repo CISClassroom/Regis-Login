@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <?php
@@ -58,7 +59,32 @@
     }
     
     ?>
-    <center><h2>LOGO</h2></center>
+     
+     <div class="logo-login">
+        <h2>Roitip</h2>
+    </div>
+    <div class="home-login">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
+            <div class="signUserPass">
+                <span class="text-sign">Username</span>
+                <a href="" class="link-forgot">Forgot Username?</a>
+            </div>
+            <br><br><br>
+            <input type="text" class="box-login" required><br><br>
+            <div class="signUserPass">
+                <span class="text-sign">Password</span>
+                <a href="" class="link-forgot">Forgot Password?</a>
+            </div>
+            <br><br><br>
+            <input type="text" class="box-login"><br><br><br>
+            <button type="submit" class="btn-signin" name="submit" value="Login">Sign in</button>
+        </form>
+        <br><br><br><br><br>
+        <div class="text-signup">
+            <span>Don’t have an account? </span><a href="" class="link-signup">Sign Up</a>
+        </div>
+    </div>
+    <!-- <center><h2>LOGO</h2></center>
     <center>Roitip Login</center>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>"><center>
         Username &nbsp;&nbsp;<a href="##">Forgot Username?</a> <br><input placeholder="Username" type="text" name="Un" value="<?php echo $UnErr;?>" required>
@@ -71,6 +97,6 @@
 
        <br> Don't have an account? <a href="##">Sign up</a>
 
-        </center></form>
+        </center></form> -->
 </body>
 </html>
