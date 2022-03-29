@@ -84,19 +84,5 @@
             <span>Don’t have an account? </span><a href="" class="link-signup">Sign Up</a>
         </div>
     </div>
-    <!-- <center><h2>LOGO</h2></center>
-    <center>Roitip Login</center>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>"><center>
-        Username &nbsp;&nbsp;<a href="##">Forgot Username?</a> <br><input placeholder="Username" type="text" name="Un" value="<?php echo $UnErr;?>" required>
-        <span>* <?php echo "$UnErr";?></span>
-        <br><br>
-        Password &nbsp;&nbsp;<a href="##">Forgot Username?</a> <br><input placeholder="Please write letter, number and symbol." type="password" name="password" value="<?php echo $PassErr;?>" required>
-        <span>* <?php echo "$PassErr";?></span>
-        <br><br>
-        <input type="submit" name="submit" value="Login">
-
-       <br> Don't have an account? <a href="##">Sign up</a>
-
-        </center></form> -->
 </body>
 </html>
