@@ -11,8 +11,8 @@
         $getAnswer = $_POST['answer'];
         $getID = $_GET['id'];
         $link = mysqli_connect("localhost", "root", "", "roitip_db");
-    $sql = "SELECT * FROM user Where id='$getID' And answer='$getAnswer'";
-    $res = mysqli_query($link, $sql);
+        $sql = "SELECT * FROM user Where id='$getID' And answer='$getAnswer'";
+        $res = mysqli_query($link, $sql);
 
     while ($data = mysqli_fetch_array($res)) {
         echo "<center>";

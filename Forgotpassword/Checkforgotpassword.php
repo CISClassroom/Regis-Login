@@ -10,8 +10,8 @@
     <?php
         $getusername = $_POST['Username'];
         $link = mysqli_connect("localhost", "root", "", "roitip_db");
-    $sql = "SELECT * FROM user Where username='$getusername'";
-    $res = mysqli_query($link, $sql);
+        $sql = "SELECT * FROM user Where username='$getusername'";
+        $res = mysqli_query($link, $sql);
 
     while ($data = mysqli_fetch_array($res)) {
 
