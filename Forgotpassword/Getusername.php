@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q&A</title>
+    <link rel="stylesheet" href="styleforgot\forgot.css">
 </head>
 <body>
     <?php
@@ -14,12 +15,20 @@
         $sql = "SELECT * FROM user Where id='$getID' And answer='$getAnswer'";
         $res = mysqli_query($link, $sql);
 
+        echo "<div class='container'>";
+
     while ($data = mysqli_fetch_array($res)) {
-        echo "<center>";
-            echo "Your Username is : {$data['username']} <br>";
-            echo "<form><input type='submit' formaction='Login.php' value='Back to Login'></form>";
-        echo "</center>";
+        echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+        echo "<form class='form-sender'>";
+        echo "<div class='Branding'>Roitip | Q&A </div>";
+
+        echo "Your Username is : {$data['username']} <br><br>";
+        echo "<input type='submit' formaction='../Login.php' value='Back to Login'>";
+        echo "</form>";
     }
+
+    
+    echo "</div>";
     ?>
 </body>
 </html>

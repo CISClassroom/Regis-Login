@@ -15,8 +15,11 @@
 
      $sql = "UPDATE user SET password='$NewPassword' where id='$getID'";
      if ($res = mysqli_query($link, $sql)){
-        echo "Password Changed";
-        echo "<form><input type='submit' formaction='forgotpassword.html' value='Login'></form>";
+        echo "<script>
+            alert('Password changed');
+            window.location.href='../Login.php';
+            </script>";
+
      }
 ?>
 </body>

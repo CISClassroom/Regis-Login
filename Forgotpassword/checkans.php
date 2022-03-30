@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
-</head>
+    <link rel="stylesheet" href="styleforgot\forgot.css">
+    </head>
 <body>
     <?php
 
@@ -14,18 +15,24 @@
      $link = mysqli_connect("localhost", "root", "", "roitip_db");
      $sql = "SELECT * FROM user where id='$getID' and answer='$getAns'";
      $res = mysqli_query($link, $sql);
-     
+     echo "<div class='container'>";
+
      if (!$data = mysqli_fetch_array($res)) {
             echo "<center>LOGO</center><br>Roitip | Forgot password<br><br>";
             echo "<center><font color='red'>Username Not found</font></center>";
             echo "<center><font color='white'>Please fill out the correction information.</font></center>";
         echo "<form><input type='submit' formaction='forgotpassword.html' value='Tryagain'>";
      } else {
-         echo "<form method='post' action='passwordupdate.php?id={$data['id']}'>";
-            echo "New Password:<input type='Password' name='Password' placeholder='New password'>";
-            echo "<input type='submit' value'Change password'>";
-         echo "</form>";
+        echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+        echo "<form class='form-sender' method='post' action='passwordupdate.php?id={$data['id']}'>";
+        echo "<div class='Branding'>Roitip | Q&A </div>";
+        echo "<div class='Tag'>New Password</div>";
+        echo "<input type='password' name='Password' placeholder='New password'><br>";
+        echo "<input type='submit' value'Change password'>";
+        echo "</form>";
      }
+
+     echo "</div>";
 
     ?>
 </body>
