@@ -5,10 +5,12 @@ html, body{
 }
 .logo{
     position: relative;
-    width: 524px;
+    text-align: center;
+    top: 34%;
+    /* width: 524px;
     height: 64px;
     left: 240px;
-    top: 200px;
+    top: 200px; */
 }
 
 .container{
@@ -26,30 +28,37 @@ html, body{
     font-size: 40PX;
 
     position: relative;
-    width: 524px;
+    top: 35%;
+    text-align: center;
+    /* width: 524px;
     height: 64px;
     left: 240px;
-    top: 230px;
+    top: 230px; */
 }
 .Tag{
     font-size: 30PX;
 
+    margin-left: 25%;
     position: relative;
-    width: 524px;
+    text-align: left;
+    top: 38%;
+    /* width: 524px;
     height: 64px;
     left: 8px;
-    top: 240px;
+    top: 240px; */
 }
 .form-sender{
     position: relative;
-    width: 524px;
+    text-align: center;
+    top: 40%;
+    /* width: 524px;
     height: 64px;
     left: 210px;
-    top: 225px;
+    top: 225px; */
 }
 input[type=text]{
     border: 1px solid #ffff;
-    width: 110%;
+    width: 50%;
     border-radius: 11px;
     height: 40px;
     font-family: 'Rubik', sans-serif;
@@ -60,7 +69,7 @@ input[type=submit]{
     background-color: #523E7D;
     margin-top: 30px;
     border: 1px solid #ffff;
-    width: 110%;
+    width: 50%;
     height: 40px;
     border-radius: 11px;
     box-sizing: border-box;
