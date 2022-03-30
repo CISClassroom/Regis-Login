@@ -6,7 +6,7 @@ html, body{
 .logo{
     position: relative;
     text-align: center;
-    top: 34%;
+    top: 30%; /* 30%จอเรารันได้นะ555 */
     /* width: 524px;
     height: 64px;
     left: 240px;
