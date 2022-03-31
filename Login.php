@@ -45,9 +45,8 @@
             $message = "Password/Username Incorrect.";
             echo "<script type='text/javascript'>alert('$message');</script>";
         } else {
-            $_SESSION['username'] = $data['username'];
-            header('Location:Forgot.php');
             echo "<script type='text/javascript'>alert('Hello {$data['username']}');</script>";
+            header('Location:index.php');
         }
     }
 
@@ -70,13 +69,13 @@
                 <a href="Forgotpassword/Forgotusername.html" class="link-forgot">Forgot Username?</a>
             </div>
             <br><br><br>
-            <input type="text" class="box-login" required><br><br>
+            <input type="text" name="Un" class="box-login" required><br><br>
             <div class="signUserPass">
                 <span class="text-sign">Password</span>
                 <a href="Forgotpassword/forgotpassword.html" class="link-forgot">Forgot Password?</a>
             </div>
             <br><br><br>
-            <input type="text" class="box-login"><br><br><br>
+            <input type="password" name="password" class="box-login"><br><br><br>
             <button type="submit" class="btn-signin" name="submit" value="Login">Sign in</button>
         </form>
         <br><br><br><br><br>
