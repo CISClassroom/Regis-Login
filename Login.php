@@ -80,7 +80,7 @@
         </form>
         <br><br><br><br><br>
         <div class="text-signup">
-            <span>Don’t have an account? </span><a href="" class="link-signup">Sign Up</a>
+            <span>Don’t have an account? </span><a href="Regis.php" class="link-signup">Sign Up</a>
         </div>
     </div>
 </body>
