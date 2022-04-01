@@ -9,7 +9,6 @@
 </head>
 <body>
     <?php
-    session_start();
     //define variables
     $UnErr = "";
     $PassErr = "";
