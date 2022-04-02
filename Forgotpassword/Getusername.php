@@ -32,6 +32,8 @@
         echo "<div class='Branding'>Roitip | Forgot password </div> <br><br>";
         echo "<font color='red' size='5'>Answer incorrect.</font> <br><br>";
         echo "<font color='white' size='5'>Please fill out the correct Answer.</font> <br><br>";
+        echo "<form action='Forgotusername.html'><input type='submit' value='Try again'></form>";
+
     }
 
     
