@@ -18,10 +18,14 @@
      echo "<div class='container'>";
 
      if (!$data = mysqli_fetch_array($res)) {
-            echo "<center>LOGO</center><br>Roitip | Forgot password<br><br>";
-            echo "<center><font color='red'>Username Not found</font></center>";
-            echo "<center><font color='white'>Please fill out the correction information.</font></center>";
-        echo "<form><input type='submit' formaction='forgotpassword.html' value='Tryagain'>";
+        echo "<div class='form-sender'>";
+        echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+
+        echo "<div class='Branding'>Roitip | Forgot password </div> <br><br>";
+        echo "<font color='red' size='5'>Answer incorrect.</font> <br><br>";
+        echo "<font color='white' size='5'>Please fill out the correct Answer.</font> <br><br>";
+
+        echo "<form action='forgotpassword.html'><input type='submit' value='Try again'></form>";
      } else {
         echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
         echo "<form class='form-sender' method='post' action='passwordupdate.php?id={$data['id']}'>";

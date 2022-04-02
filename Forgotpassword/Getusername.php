@@ -17,7 +17,7 @@
 
         echo "<div class='container'>";
 
-    while ($data = mysqli_fetch_array($res)) {
+    if ($data = mysqli_fetch_array($res)) {
         echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
         echo "<form class='form-sender'>";
         echo "<div class='Branding'>Roitip | Q&A </div>";
@@ -25,6 +25,13 @@
         echo "Your Username is : {$data['username']} <br><br>";
         echo "<input type='submit' formaction='../Login.php' value='Back to Login'>";
         echo "</form>";
+    } else {
+        echo "<div class='form-sender'>";
+        echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+
+        echo "<div class='Branding'>Roitip | Forgot password </div> <br><br>";
+        echo "<font color='red' size='5'>Answer incorrect.</font> <br><br>";
+        echo "<font color='white' size='5'>Please fill out the correct Answer.</font> <br><br>";
     }
 
     

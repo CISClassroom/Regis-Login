@@ -16,7 +16,10 @@
         $res = mysqli_query($link, $sql);
         echo "<div class='container'>";
 
-    while ($data = mysqli_fetch_array($res)) {
+    if ($data = mysqli_fetch_array($res)) {        
+        
+        echo "<div class='back--icon'><a href='../Login.php'><img src='img/Polygon 1.png' width='30px' height='auto'></a></div>";
+
         echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
 
         echo "<form class='form-sender' method='post' action='checkans.php?id={$data['id']}'>";
@@ -25,6 +28,15 @@
         echo "<input class='button-text' type='text' name='Ans' placeholder='Answer'>";
         echo "<input type='submit' value='Next'>";
         echo "</form>";
+    } else {
+        echo "<div class='form-sender'>";
+        echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+
+        echo "<div class='Branding'>Roitip | Forgot password </div> <br><br>";
+        echo "<font color='red' size='5'>Username Not found</font> <br><br>";
+        echo "<font color='white' size='5'>Please fill out the correct information.</font> <br><br>";
+
+        echo "<form action='forgotpassword.html'><input type='submit' value='Try again'></form>";
     }
 
     echo "</div>";

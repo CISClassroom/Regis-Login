@@ -17,9 +17,23 @@
      echo "<div class='container'>";
 
      if (!$data = mysqli_fetch_array($res)) {
-        echo "<a href='login.html'>Login</a>";
+        echo "<div class='form-sender'>";
+        echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+
+        echo "<div class='Branding'>Roitip | Forgot password </div> <br><br>";
+        echo "<font color='red' size='5'>Email Not found</font> <br><br>";
+        echo "<font color='white' size='5'>Please fill out the correct information.</font> <br><br>";
+
+        echo "<form action='Forgotusername.html'><input type='submit' value='Try again'></form>";
+
+
+
+    echo "</div>";
      } else {
+        echo "<div class='back--icon'><a href='Forgotusername.html'><img src='img/Polygon 1.png' width='30px' height='auto'></a></div>";
+
       echo "<div class='logo'><img src='img\Vector.png' width='70px' height='auto'></div>";
+
          echo "<div class='form-sender'>";
              echo "<form method='post' action='Getusername.php?id={$data['id']}'>";
                 echo "<div class='Branding'>Roitip | Q&A </div>";
