@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <?php
@@ -57,30 +57,32 @@
     }
     
     ?>
-     
-    <div class="logo-login">
-        <h2>Roitip</h2>
-    </div>
-    <div class="home-login">
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
-            <div class="signUserPass">
-                <span class="text-sign">Username</span>
-                <a href="Forgotpassword/Forgotusername.html" class="link-forgot">Forgot Username?</a>
-            </div>
-            <br><br><br>
-            <input type="text" name="Un" class="box-login" required><br><br>
-            <div class="signUserPass">
-                <span class="text-sign">Password</span>
-                <a href="Forgotpassword/forgotpassword.html" class="link-forgot">Forgot Password?</a>
-            </div>
-            <br><br><br>
-            <input type="password" name="password" class="box-login"><br><br><br>
-            <button type="submit" class="btn-signin" name="submit" value="Login">Sign in</button>
-        </form>
-        <br><br><br><br><br>
-        <div class="text-signup">
-            <span>Don’t have an account? </span><a href="Regis.php" class="link-signup">Sign Up</a>
+    <div class="main-login">
+        <div class="logo-login">
+            <h2>Roitip</h2>
         </div>
-    </div>
+        <div class="home-login">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
+                <div class="signUserPass">
+                    <span class="text-sign">Username</span>
+                    <a href="Forgotpassword/Forgotusername.html" class="link-forgot">Forgot Username?</a>
+                </div>
+                <br><br><br>
+                <input type="text" name="Un" class="box-login" required><br><br>
+                <div class="signUserPass">
+                    <span class="text-sign">Password</span>
+                    <a href="Forgotpassword/forgotpassword.html" class="link-forgot">Forgot Password?</a>
+                </div>
+                <br><br><br>
+                <input type="password" name="password" class="box-login"><br><br><br>
+                <button type="submit" class="btn-signin" name="submit" value="Login">Sign in</button>
+            </form>
+            <br><br><br><br><br>
+            <div class="text-signup">
+                <span>Don’t have an account? </span><a href="Regis.php" class="link-signup">Sign Up</a>
+            </div>
+        </div>
+    </div> 
+    
 </body>
 </html>

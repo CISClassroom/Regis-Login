@@ -1,14 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-html,
-body {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body{
   position: relative;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
-.logo-login {
+.main-login{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.main-login .logo-login {
+  padding: 5%;
+
   width: 50%;
   height: 100%;
   right: 49%;
@@ -22,17 +34,17 @@ body {
 
   color: #000000;
 }
-.home-login {
-  padding: 9%;
+.main-login .home-login {
   position: absolute;
-  width: 32%;
-  height: 65%;
+  padding: 9%;
+  width: 50%;
+  height: 100%;
   left: 50%;
   top: 0%;
 
   background: #523e7d;
 }
-.signUserPass {
+.main-login .home-login .signUserPass {
   width: 80%;
   font-family: "Rubik";
   font-style: normal;
@@ -41,7 +53,7 @@ body {
 
   color: #ffffff;
 }
-.text-sign, .link-forgot{
+.main-login .home-login .signUserPass .text-sign .link-forgot{
     display: inline;
 }
 .text-sign{
