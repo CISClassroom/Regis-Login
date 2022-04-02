@@ -7,10 +7,20 @@ html, body{
   height: 0%;
   width: 100%;
 }
+.container{
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    text-align: center;
+    background-color: #523E7D;
+    color: white;
+}
 .logo{
     position: relative;
     text-align: center;
-    top: 34%;
+    /* top: 30%; */
     /* width: 524px;
     height: 64px;
     left: 240px;
@@ -18,25 +28,18 @@ html, body{
 }
 .back--icon{
     position: relative;
-    right: 450px;
-    top: 280px;
+    right: 50%;
+    /* right: 450px;
+    top: 280px; */
 }
-.container{
-    font-family: 'Rubik', sans-serif;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    background-color: #523E7D;
-    color: white;
-}
+
 .Branding{
     font-weight: 400PX;
     line-height: 64px;
     font-size: 40PX;
 
     position: relative;
-    top: 35%;
+    /* top: 35%; */
     text-align: center;
     /* width: 524px;
     height: 64px;
@@ -49,7 +52,7 @@ html, body{
     margin-left: 25%;
     position: relative;
     text-align: left;
-    top: 38%;
+    /* top: 38%; */
     /* width: 524px;
     height: 64px;
     left: 8px;
@@ -58,7 +61,7 @@ html, body{
 .form-sender{
     position: relative;
     text-align: center;
-    top: 40%;
+    /* top: 40%; */
     /* width: 524px;
     height: 64px;
     left: 210px;

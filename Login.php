@@ -58,7 +58,7 @@
     
     ?>
      
-     <div class="logo-login">
+    <div class="logo-login">
         <h2>Roitip</h2>
     </div>
     <div class="home-login">
