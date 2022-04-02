@@ -1,57 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 body{
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 .main-login{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
 .main-login .logo-login {
-  padding: 5%;
+    padding: 5%;
 
-  width: 50%;
-  height: 100%;
-  right: 49%;
+    width: 50%;
+    height: 100%;
+    right: 49%;
 
-  text-align: center;
-  position: absolute;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 350;
-  font-size: 128px;
+    text-align: center;
+    position: absolute;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 128px;
 
-  color: #000000;
+    color: #000000;
 }
 .main-login .home-login {
-  position: absolute;
-  padding: 9%;
-  width: 50%;
-  height: 100%;
-  left: 50%;
-  top: 0%;
+    position: absolute;
+    padding: 9%;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0%;
 
-  background: #523e7d;
+    background: #523e7d;
 }
 .main-login .home-login .signUserPass {
-  width: 80%;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 30px;
+    width: 80%;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 .main-login .home-login .signUserPass .text-sign .link-forgot{
     display: inline;
@@ -65,49 +63,68 @@ body{
     float: right;
 }
 .box-login {
-  width: 80%;
-  height: 5%;
-  left: 20%;
-  top: 28%;
+    width: 80%;
+    height: 5%;
+    left: 20%;
+    top: 28%;
 
-  font-family: "Rubik";
-  font-style: normal;
-  font-size: 30px;
-  line-height: 65px;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 65px;
 
-  background: #ffffff;
-  border-radius: 30px;
-  outline: none;
+    background: #ffffff;
+    border-radius: 30px;
+    outline: none;
 }
 .btn-signin {
-  width: 53%;
-  height: 7%;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 30px;
-  text-align: center;
-  color: #ffffff;
+    width: 53%;
+    height: 7%;
 
-  position: absolute;
-  background: #523e7d;
-  border: 5px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 30px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+
+    position: absolute;
+    background: #523e7d;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: all 0.4s ease;
 }
-.text-signup{
-    font-family: 'Rubik';
+.main-login .home-login .btn-signin:hover{
+    color: #523e7d;
+    background: #FFFFFF;
+}
+.main-login .text-signup{
+    padding-top: 20%;
+    width: 80%;
+    height: 20%;
+   
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     
     color: #FFFFFF;
 }
-.link-signup{
-    font-family: 'Rubik';
+.main-login .text-signup .signupBtn{
+    width: 20%;
+    height: 5%;
     font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    
-    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+
+    position: absolute;
+    background: #523e7d;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+.main-login .text-signup .signupBtn:hover{
+    color: #523e7d;
+    background: #FFFFFF;
 }
