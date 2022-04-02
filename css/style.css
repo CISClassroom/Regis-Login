@@ -3,6 +3,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 .logo-login {
   width: 50%;

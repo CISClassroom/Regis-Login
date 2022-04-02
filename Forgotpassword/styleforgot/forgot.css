@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 html, body{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  height: 0%;
+  width: 100%;
 }
 .logo{
     position: relative;
@@ -19,7 +23,7 @@ html, body{
 }
 .container{
     font-family: 'Rubik', sans-serif;
-    height: 1080px;
+    height: 100%;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
