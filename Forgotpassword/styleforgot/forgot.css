@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 html, body{
-  margin: 0;
-  padding: 0;
-  position: relative;
-  min-height: 100vh;
-  height: 0%;
-  width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    height: 0%;
+    width: 100%;
 }
 .container{
     font-family: 'Rubik', sans-serif;
@@ -20,17 +20,10 @@ html, body{
 .logo{
     position: relative;
     text-align: center;
-    /* top: 30%; */
-    /* width: 524px;
-    height: 64px;
-    left: 240px;
-    top: 200px; */
 }
 .back--icon{
     position: relative;
     right: 50%;
-    /* right: 450px;
-    top: 280px; */
 }
 
 .Branding{
@@ -39,12 +32,7 @@ html, body{
     font-size: 40PX;
 
     position: relative;
-    /* top: 35%; */
     text-align: center;
-    /* width: 524px;
-    height: 64px;
-    left: 240px;
-    top: 230px; */
 }
 .Tag{
     font-size: 30PX;
@@ -52,20 +40,10 @@ html, body{
     margin-left: 25%;
     position: relative;
     text-align: left;
-    /* top: 38%; */
-    /* width: 524px;
-    height: 64px;
-    left: 8px;
-    top: 240px; */
 }
 .form-sender{
     position: relative;
     text-align: center;
-    /* top: 40%; */
-    /* width: 524px;
-    height: 64px;
-    left: 210px;
-    top: 225px; */
 }
 input[type=text]{
     border: 1px solid #ffff;

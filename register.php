@@ -69,14 +69,11 @@
         echo "alert('Sign up Error!, Please check your data');";
         echo "document.location = 'Login.php'";
         echo '</script>';
-        //goto failed
     } else{
-        //add js
         echo '<script type="text/javascript">';
         echo "alert('Sign up Complete!');";
         echo "document.location = 'Login.php'";
         echo '</script>';
-        // header('Location:login.php');
     }
 }
 ?>
