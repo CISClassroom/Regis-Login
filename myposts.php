@@ -79,7 +79,6 @@
             <h5><?php echo $r['title']; ?></h5>
             <br>
             <p><?php echo $r['content'];?></p>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment </a>
             <br>
         </div>
     <?php }?>
