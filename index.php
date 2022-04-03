@@ -16,7 +16,11 @@
             if(isset($_SESSION['id'])){
 
             } else {
-                header('Location:Login.php');
+                echo '<script type="text/javascript">';
+                echo "alert('Please go to Login!');";
+                echo "document.location = 'login.php'";
+                echo '</script>';
+                // header('Location:Login.php');
             }
             
             $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
