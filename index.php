@@ -10,6 +10,23 @@
       rel="stylesheet">
 </head>
 <body>
+    <!--use php call database-->
+<?php
+            session_start();
+            if(isset($_SESSION['id'])){
+
+            } else {
+                header('Location:Login.php');
+            }
+            
+            $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+    // get data to display                    
+            $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id";
+            $res = mysqli_query($link, $sql);
+            //$id_user = $_GET['id'];
+
+?>
+
     <div class="sidebar">
         <div class="logo-content">
             <div class="logo">
@@ -33,9 +50,9 @@
                 <span class="tooltip">Account</span>
             </li>
             <li>
-                <a href="myposts.php">
-                    <i class="material-icons">article</i>
-                    <span class="link-name">My Posts</span>
+                 <a href="myposts.php?id=<?php echo $_SESSION['id'];?>">
+                        <i class="material-icons">article</i>
+                        <span class="link-name">My Posts</span>
                 </a>
                 <span class="tooltip">My Posts</span>
             </li>
@@ -63,22 +80,22 @@
             sidebar.classList.toggle("active");
         }
     </script>
+    <div class="scroll-content">
+       <!--post and all content-->
     <div class="main-content">
+    <?php foreach($res as $r){ ?>
         <div class="box">
-            <h2>Title</h2><br>
-            <p>content</p><br>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
+<!--display post from database-->
+            <h4><?php echo $r['username'];?></h4>
+            <h5><?php echo $r['title']; ?></h5>
+            <br>
+            <p><?php echo $r['content'];?></p>
+            <a href="#" class="comment"><i class="material-icons">forum</i> Comment </a>
+            <br>
         </div>
-        <div class="box">
-            <h2>Title</h2><br>
-            <p>content</p><br>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
-        </div>
-        <div class="box">
-            <h2>Title</h2><br>
-            <p>content</p><br>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
-        </div>
+    <?php }?>
+        </div> 
     </div>
+
 </body>
 </html>

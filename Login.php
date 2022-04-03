@@ -10,6 +10,7 @@
 </head>
 <body>
     <?php
+    session_start();
     //define variables
     $UnErr = "";
     $PassErr = "";
@@ -45,7 +46,8 @@
             $message = "Password/Username Incorrect.";
             echo "<script type='text/javascript'>alert('$message');</script>";
         } else {
-            echo "<script type='text/javascript'>alert('Hello {$data['username']}');</script>";
+            $_SESSION['id'] = $data['id'];
+            //echo "<script type='text/javascript'>alert('Hello {$data['username']}');</script>";
             header('Location:index.php');
         }
     }
