@@ -66,13 +66,13 @@
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
                 <div class="signUserPass">
                     <span class="text-sign">Username</span>
-                    <a href="Forgotpassword/Forgotusername.html" class="link-forgot">Forgot Username?</a>
+                    <a href="forgotpassword/Forgotusername.html" class="link-forgot">Forgot Username?</a>
                 </div>
                 <br><br><br>
                 <input type="text" name="Un" class="box-login" required><br><br>
                 <div class="signUserPass">
                     <span class="text-sign">Password</span>
-                    <a href="Forgotpassword/forgotpassword.html" class="link-forgot">Forgot Password?</a>
+                    <a href="forgotpassword/forgotpassword.html" class="link-forgot">Forgot Password?</a>
                 </div>
                 <br><br><br>
                 <input type="password" name="password" class="box-login"><br><br><br>
