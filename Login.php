@@ -103,13 +103,6 @@
                 $questionErr = "";
                 $answerErr = "";
 
-                // function test_input($data){
-                //     $data = trim($data);
-                //     $data = stripslashes($data);
-                //     $data = htmlspecialchars($data);
-                //     return $data;
-                // }
-
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if (empty($_POST["username"])) {
                     $nameErr = "* Username is required";
@@ -157,37 +150,47 @@
 
                 if(!$result)
                 {
-                    echo "Failed";//goto failed
+                    echo '<script type="text/javascript">';
+                    echo "alert('Sign up Error!');";
+                    echo "document.location = 'login.php'";
+                    echo '</script>';
+                    //goto failed
                 } else{
-                    header('Location:login.php');
+                    //add js
+                    echo '<script type="text/javascript">';
+                    echo "alert('Sign up Complete!');";
+                    echo "document.location = 'login.php'";
+                    echo '</script>';
+                    // header('Location:login.php');
                 }
 
             }
             ?>
-
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-                <span>Username</span><br>
-                <input type="text" name="username" required>
-                <span class="error"><?php echo $nameErr;?></span>
-                <br><br>
-                <span>Password</span><br>
-                <input type="password" name="password" id="" required>
-                <span class="error"><?php echo $passErr;?></span>
-                <br><br>
-                <span>Email</span><br>
-                <input type="email" name="email" id="" required>
-                <span class="error"><?php echo $emailErr;?></span>
-                <br><br>
-                <span>Question for recovery</span><br>
-                <input type="text" name="question" id="" required>
-                <span class="error"><?php echo $questionErr;?></span>
-                <br><br>
-                <span>Answer for recovery</span><br>
-                <input type="text" name="answer" id="" required>
-                <span class="error"><?php echo $answerErr;?></span>
-                <br><br>
-                <input type="submit" name="submit" value="Submit"> 
-            </form>
+            <div class="modal-body">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                    <span class="textsign-regis">Username</span><br>
+                    <input class="box-regis" type="text" name="username" required>
+                    <span class="error"><?php echo $nameErr;?></span>
+                    <br><br>
+                    <span class="textsign-regis">Password</span><br>
+                    <input class="box-regis" type="password" name="password" id="" required>
+                    <span class="error"><?php echo $passErr;?></span>
+                    <br><br>
+                    <span class="textsign-regis">Email</span><br>
+                    <input class="box-regis" type="email" name="email" id="" required>
+                    <span class="error"><?php echo $emailErr;?></span>
+                    <br><br>
+                    <span class="textsign-regis">Question for recovery</span><br>
+                    <input class="box-regis" type="text" name="question" id="" required>
+                    <span class="error"><?php echo $questionErr;?></span>
+                    <br><br>
+                    <span class="textsign-regis">Answer for recovery</span><br>
+                    <input class="box-regis" type="text" name="answer" id="" required>
+                    <span class="error"><?php echo $answerErr;?></span>
+                    <br><br>
+                    <input class="btn-regis" type="submit" name="submit" value="Submit"> 
+                </form>
+            </div>
         </div>
     </div>
     <script src="js/login.js"></script>

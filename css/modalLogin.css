@@ -20,6 +20,46 @@
     width: 70%;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
+.modal-body{
+    text-align: center;
+    margin: 1%;
+    padding-left: 30%;
+    padding-right: 30%;
+
+    font-size: 20px;
+}
+.textsign-regis{
+    float: left;
+}
+.box-regis{
+    width: 80%;
+    height: 20%;
+
+    font-style: normal;
+    font-size: 28px;
+    line-height: 65px;
+
+    background: #ffffff;
+    border-radius: 30px;
+    outline: none;
+}
+.btn-regis{
+    width: 53%;
+    height: 7%;
+
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    color: #ffffff;
+
+    background: #523e7d;
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+}
+.btn-regis:hover{
+    color: #523e7d;
+    background: #FFFFFF;
+}
 .closeBtn{
     color: #ccc;
     float: right;
