@@ -84,18 +84,34 @@
             sidebar.classList.toggle("active");
         }
     </script>
+<<<<<<< Updated upstream
        
         <div class="main-content">
         <?php foreach($res as $r){ ?>
             <div class="box">
     <!--    display post from database-->
+=======
+    <div class="scroll-content">
+       <!--post and all content-->
+        <div class="main-content">
+            <?php foreach($res as $r){ ?>
+            <div class="box">
+                <!--display post from database-->
+>>>>>>> Stashed changes
                 <h4><?php echo $r['username'];?></h4>
                 <h5><?php echo $r['title']; ?></h5>
                 <br>
                 <p><?php echo $r['content'];?></p>
+<<<<<<< Updated upstream
                 <br>
             </div>
         <?php }?>
+=======
+                <a href="#" class="comment"><i class="material-icons">forum</i> Comment </a>
+                <br>
+            </div>
+            <?php }?>
+>>>>>>> Stashed changes
         </div> 
 
 </body>
