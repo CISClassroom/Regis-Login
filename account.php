@@ -10,6 +10,17 @@
       rel="stylesheet">
 </head>
 <body>
+    <?php
+    session_start();
+        $id_user = $_SESSION['id'];
+        $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+// get data to display                    
+        $sql = "SELECT * FROM user as u where $id_user=u.id";
+        $res = mysqli_query($link, $sql);
+        //$id_user = $_GET['id'];
+
+    ?>
+
     <div class="sidebar">
         <div class="logo-content">
             <div class="logo">
@@ -64,21 +75,14 @@
         }
     </script>
     <div class="main-content">
+    <?php foreach($res as $r){ ?>
         <div class="box">
-            <h2>Title</h2><br>
-            <p>content</p><br>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
+<!--display post from database-->
+            <h5>Username: <?php echo $r['username'];?></h5>
+            <h5>Email: <?php echo $r['email']; ?></h5>
+            <h5>Bio: <br><?php echo $r['bio']; ?></h5>
         </div>
-        <div class="box">
-            <h2>Title</h2><br>
-            <p>content</p><br>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
-        </div>
-        <div class="box">
-            <h2>Title</h2><br>
-            <p>content</p><br>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
-        </div>
+    <?php }?>
     </div>
 </body>
 </html>
