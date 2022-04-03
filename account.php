@@ -13,7 +13,7 @@
     <?php
     session_start();
         $id_user = $_SESSION['id'];
-        $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+        $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
 // get data to display                    
         $sql = "SELECT * FROM user as u where $id_user=u.id";
         $res = mysqli_query($link, $sql);

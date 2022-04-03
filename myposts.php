@@ -10,14 +10,14 @@
       rel="stylesheet">
 </head>
 <body>
-<?php
-            session_start();
-            $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
-            // get data to display                    
-            $id_user = $_SESSION['id'];
-            $sql = "SELECT * FROM post as p, user as u where id_user='$id_user' and u.id = '$id_user'";
-            $res = mysqli_query($link, $sql);
-?>
+    <?php
+        session_start();
+        $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
+        // get data to display                    
+        $id_user = $_SESSION['id'];
+        $sql = "SELECT * FROM post as p, user as u where id_user='$id_user' and u.id = '$id_user'";
+        $res = mysqli_query($link, $sql);
+    ?>
     <div class="sidebar">
         <div class="logo-content">
             <div class="logo">

@@ -23,7 +23,7 @@
                 // header('Location:Login.php');
             }
             
-            $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+            $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
     // get data to display                    
             $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id";
             $res = mysqli_query($link, $sql);

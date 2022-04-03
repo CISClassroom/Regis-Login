@@ -8,13 +8,12 @@
 html{
     background-color: lightgrey;
     height: 120vh;
-    overflow: scroll;
 }
 body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
 }
 .sidebar{
     position: fixed;
@@ -129,21 +128,16 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
-
 .main-content{
-    align-items:center;
-    justify-content:center;
-    left: 78px;
-    transition: all 0.5s ease;
-    position: fixed;
+    position: absolute;
     padding-left: 10%;
     padding-right: 10%;
     left: 50%;
     width: calc(100% - 78px);
-    height: 100%;
-    overflow: scroll;
-    height: 100%;
-
+    align-items:center;
+    justify-content:center;
+    left: 78px;
+    transition: all 0.5s ease;
 }
 .box{
     margin: 20px;
