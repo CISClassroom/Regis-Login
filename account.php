@@ -51,13 +51,6 @@
                 <span class="tooltip">My Posts</span>
             </li>
             <li>
-                <a href="favorite.php">
-                    <i class="material-icons">favorite</i>
-                    <span class="link-name">Favorite</span>
-                </a>
-                <span class="tooltip">Favorite</span>
-            </li>
-            <li>
                 <a href="logout.php">
                     <i class="material-icons" id="log_out">logout</i>
                     <span class="link-name">Logout</span>
