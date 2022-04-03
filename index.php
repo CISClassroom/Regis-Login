@@ -84,22 +84,19 @@
             sidebar.classList.toggle("active");
         }
     </script>
-    <div class="scroll-content">
-       <!--post and all content-->
-    <div class="main-content">
-    <?php foreach($res as $r){ ?>
-        <div class="box">
-<!--display post from database-->
-            <h4><?php echo $r['username'];?></h4>
-            <h5><?php echo $r['title']; ?></h5>
-            <br>
-            <p><?php echo $r['content'];?></p>
-            <a href="#" class="comment"><i class="material-icons">forum</i> Comment </a>
-            <br>
-        </div>
-    <?php }?>
+       
+        <div class="main-content">
+        <?php foreach($res as $r){ ?>
+            <div class="box">
+    <!--    display post from database-->
+                <h4><?php echo $r['username'];?></h4>
+                <h5><?php echo $r['title']; ?></h5>
+                <br>
+                <p><?php echo $r['content'];?></p>
+                <br>
+            </div>
+        <?php }?>
         </div> 
-    </div>
 
 </body>
 </html>
