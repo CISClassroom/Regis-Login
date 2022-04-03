@@ -138,6 +138,9 @@ body{
     justify-content:center;
     left: 78px;
     transition: all 0.5s ease;
+
+    height: 100%;
+    overflow: auto;
 }
 .box{
     margin: 20px;
