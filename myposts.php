@@ -66,7 +66,10 @@
                 <br>
                 <p><?php echo $r['content'];?></p>
                 <br>
-
+                <div class="edit-del">
+                    <button id="btn-editpost" class="edit-post"><i class="material-icons">edit</i></button>
+                    <button id="btn-deletepost" class="delete-post"><i class="material-icons">delete</i></button>
+                </div>
             </div>
         <?php }?>
     </div>
