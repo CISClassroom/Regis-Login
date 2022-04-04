@@ -327,6 +327,8 @@ body{
     background: #523e7d;
     border: 5px solid #ffffff;
     border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
 }
 .del-icon:hover{
     color: #523e7d;
