@@ -7,15 +7,19 @@
 
 ### Connect with us:
 
-[![website](./img/facebook.svg)](https://www.facebook.com/nattapon.wongpoomee)
-&nbsp;&nbsp;
-[![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100007749335246)
-&nbsp;&nbsp;
-[![website](./img/facebook.svg)](https://www.facebook.com/CPT.C4P741N)
-&nbsp;&nbsp;
-[![website](./img/facebook.svg)](https://www.facebook.com/nanping.nakharin)
-&nbsp;&nbsp;
-[![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100009337702555)
+Nattaphon: [![website](./img/facebook.svg)](https://www.facebook.com/nattapon.wongpoomee)
+&nbsp;&nbsp;<br />
+
+Pocharapon: [![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100007749335246)
+&nbsp;&nbsp;<br />
+
+Prompiriya: [![website](./img/facebook.svg)](https://www.facebook.com/CPT.C4P741N)
+&nbsp;&nbsp;<br />
+
+Nakarin: [![website](./img/facebook.svg)](https://www.facebook.com/nanping.nakharin)
+&nbsp;&nbsp;<br />
+
+Jaturawit: [![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100009337702555)
 
 <br />
 <br />
