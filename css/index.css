@@ -272,25 +272,22 @@ body{
     color: #523e7d;
     background: #FFFFFF;
 }
-.modal-account{
-    /* display: none; */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    font-family: 'Rubik', sans-serif;
-}
 .closeBtn{
     color: #ccc;
     float: right;
     font-size: 30px;
 }
 .closeBtn:hover,.closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closeBtnacc{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.closeBtnacc:hover,.closeBtnacc:focus{
     color: #000;
     text-decoration: none;
     cursor: pointer;

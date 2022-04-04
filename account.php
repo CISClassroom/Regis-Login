@@ -76,16 +76,26 @@
 
     <div id="editaccountmodal" class="modal">
         <div class="modal-content">
-            <div class="modal-account-header">
-
-            </div>
+            <div class="modal-header">
+                <span class="closeBtnacc">&times;</span>
+                <h2>Edit Account</h2>
+            </div><br>
             <div class="modal-account-body">
-    
+                <form action="editaccount.php" method="post">
+                    <h3>Username</h3>
+                    <input type="text" name="username" id="" value="<?php echo $r['username'];?>">
+                    <h3>Email</h3>
+                    <input type="text" name="email" id="" value="<?php echo $r['email']; ?>">
+                    <h3>Bio</h3>
+                    <textarea name="" id="" cols="30" rows="10" value="<?php echo $r['bio']; ?>"></textarea><br>
+                    <button type="submit" class="">Save</button>
+                </form>
             </div>
         </div>
         
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/account.js"></script>
 </body>
 </html>

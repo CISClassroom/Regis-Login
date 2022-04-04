@@ -6,11 +6,11 @@ btn.onclick = function(){
 }
 
 var modalAdd = document.querySelector('#addpostmodal')
-var modalBtn = document.querySelector('#btn-addpost')
-var closeBtn = document.querySelector('.closeBtn')
+var modalBtnadd = document.querySelector('#btn-addpost')
+var closeBtnadd = document.querySelector('.closeBtn')
 
-modalBtn.addEventListener('click', openmodal)
-closeBtn.addEventListener('click', closemodal)
+modalBtnadd.addEventListener('click', openmodal)
+closeBtnadd.addEventListener('click', closemodal)
 window.addEventListener('click', clickOutside)
 
 function openmodal(){
