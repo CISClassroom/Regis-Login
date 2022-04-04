@@ -129,9 +129,7 @@
             </div><br>
             <div class="modal-delpost-body">
                 <h3>Do you want to delete the post?</h3><br>
-                <div class="delpost-icon">
-                    <button type="submit" class="del-icon" formaction="delpost.php">Delete</button>
-                </div>
+                <a href="deletepost.php" class="del-icon">Delete</a>
             </div>
         </div>
     </div>
