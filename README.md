@@ -10,7 +10,7 @@
 Nattaphon: [![website](./img/facebook.svg)](https://www.facebook.com/nattapon.wongpoomee)
 &nbsp;&nbsp;<br />
 
-Pocharapon: [![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100007749335246)
+Pochcharapon: [![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100007749335246)
 &nbsp;&nbsp;<br />
 
 Prompiriya: [![website](./img/facebook.svg)](https://www.facebook.com/CPT.C4P741N)
