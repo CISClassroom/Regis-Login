@@ -25,7 +25,7 @@
             
             $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
     // get data to display                    
-            $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id";
+            $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id order by p.id_post desc";
             $res = mysqli_query($link, $sql);
             //$id_user = $_GET['id'];
 
