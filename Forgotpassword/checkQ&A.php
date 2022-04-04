@@ -10,7 +10,7 @@
 <body>
     <?php
      $getEmail = $_POST['Email'];
-     $link = mysqli_connect("localhost", "root", "", "roitip_db");
+     $link = mysqli_connect("localhost", "root", "87654321", "roitip_db");
      $sql = "SELECT * FROM user where email='$getEmail'";
      $res = mysqli_query($link, $sql);
      

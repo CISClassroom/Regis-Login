@@ -12,7 +12,7 @@
 
      $getAns = $_POST['Ans'];
      $getID = $_GET['id'];
-     $link = mysqli_connect("localhost", "root", "", "roitip_db");
+     $link = mysqli_connect("localhost", "root", "87654321", "roitip_db");
      $sql = "SELECT * FROM user where id='$getID' and answer='$getAns'";
      $res = mysqli_query($link, $sql);
      echo "<div class='container'>";

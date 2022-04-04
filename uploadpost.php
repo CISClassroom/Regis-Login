@@ -1,6 +1,6 @@
 <?php session_start();
 
-    $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+    $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
     
     if (isset($_REQUEST['add_post'])){
         $id_user = $_SESSION['id']; 

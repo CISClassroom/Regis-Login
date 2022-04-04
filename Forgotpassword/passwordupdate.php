@@ -11,7 +11,7 @@
     $getID = $_GET['id'];
     $getPassword = $_POST['Password'];
     $NewPassword = md5($getPassword);
-    $link = mysqli_connect("localhost", "root", "", "roitip_db");
+    $link = mysqli_connect("localhost", "root", "87654321", "roitip_db");
 
      $sql = "UPDATE user SET password='$NewPassword' where id='$getID'";
      if ($res = mysqli_query($link, $sql)){

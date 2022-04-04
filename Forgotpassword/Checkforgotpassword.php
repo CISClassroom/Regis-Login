@@ -11,7 +11,7 @@
 <body>
     <?php
         $getusername = $_POST['Username'];
-        $link = mysqli_connect("localhost", "root", "", "roitip_db");
+        $link = mysqli_connect("localhost", "root", "87654321", "roitip_db");
         $sql = "SELECT * FROM user Where username='$getusername'";
         $res = mysqli_query($link, $sql);
         echo "<div class='container'>";

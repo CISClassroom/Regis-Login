@@ -67,33 +67,64 @@
                 <p><?php echo $r['content'];?></p>
                 <br>
                 <div class="edit-del">
-                    <button id="btn-editpost" class="edit"><i class="material-icons">edit</i></button>
-                    <button id="btn-deletepost" class="delete-post"><i class="material-icons">delete</i></button>
+                    <button id="btn-editpost<?php echo $r['id_post'] ?>" class="edit"><i class="material-icons">edit</i></button>
+                    <button id="btn-deletepost<?php echo $r['id_post'] ?>" class="delete-post"><i class="material-icons">delete</i></button>
                 </div>
             </div>
         <?php }?>
     </div>
-    
-    <div id="editpostmodal" class="modal">
+
+    <?php foreach($res as $r){ ?>
+    <div id="editpostmodal<?php echo $r['id_post'] ?>" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span id="closeBtnpost" class="closeBtn">&times;</span>
-                <h2>Add Post</h2>
+                <span id="closeBtnpost<?php echo $r['id_post'] ?>" class="closeBtn">&times;</span>
+                <h2>Edit Post</h2>
             </div><br>
             <div class="modal-body">
+                
                 <form action="uploadpost.php" method="post">
                     <input type="text" name="title" class="textbox-addpost" placeholder="title" value="<?php echo $r['title']; ?>"><br>
                     <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"><?php echo $r['content'];?></textarea><br>
                     <button type="submit" class="button-addpost">Add</button>
                 </form>
+                
             </div>
         </div>
     </div>
+    <?php }?>
 
-    <div id="delpostmodal" class="modal">
+    <?php foreach($res as $r){ ?>
+    <script>
+        var modalEditpost<?php echo $r['id_post'] ?> = document.querySelector('#editpostmodal<?php echo $r['id_post'] ?>')
+        var modalBtnpost<?php echo $r['id_post'] ?> = document.querySelector('#btn-editpost<?php echo $r['id_post'] ?>')
+        var closeBtnpost<?php echo $r['id_post'] ?> = document.querySelector('#closeBtnpost<?php echo $r['id_post'] ?>')
+
+        modalBtnpost<?php echo $r['id_post'] ?>.addEventListener('click', openmodal<?php echo $r['id_post'] ?>)
+        closeBtnpost<?php echo $r['id_post'] ?>.addEventListener('click', closemodal<?php echo $r['id_post'] ?>)
+        window.addEventListener('click', clickOutside<?php echo $r['id_post'] ?>)
+
+        function openmodal<?php echo $r['id_post'] ?>(){
+            modalEditpost<?php echo $r['id_post'] ?>.style.display = 'block'
+        }
+
+        function closemodal<?php echo $r['id_post'] ?>(){
+            modalEditpost<?php echo $r['id_post'] ?>.style.display = 'none'
+        }
+
+        function clickOutside<?php echo $r['id_post'] ?>(e){
+            if(e.target == modalEditpost<?php echo $r['id_post'] ?>){
+                modalEditpost<?php echo $r['id_post'] ?>.style.display = 'none'
+            }
+        }
+    </script>
+    <?php }?>
+
+    <?php foreach($res as $r){ ?>
+    <div id="delpostmodal<?php echo $r['id_post'] ?>" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span id="closeBtndel" class="closeBtn">&times;</span>
+                <span id="closeBtndel<?php echo $r['id_post'] ?>" class="closeBtn">&times;</span>
                 <h2>Delete Post</h2>
             </div><br>
             <div class="modal-delpost-body">
@@ -105,9 +136,34 @@
             </div>
         </div>
     </div>
-    
+    <?php }?>
+
+    <?php foreach($res as $r){ ?>
+    <script>
+        var modalEditdel<?php echo $r['id_post'] ?> = document.querySelector('#delpostmodal<?php echo $r['id_post'] ?>')
+        var modalBtndel<?php echo $r['id_post'] ?> = document.querySelector('#btn-deletepost<?php echo $r['id_post'] ?>')
+        var closeBtndel<?php echo $r['id_post'] ?> = document.querySelector('#closeBtndel<?php echo $r['id_post'] ?>')
+
+        modalBtndel<?php echo $r['id_post'] ?>.addEventListener('click', openmodal<?php echo $r['id_post'] ?>)
+        closeBtndel<?php echo $r['id_post'] ?>.addEventListener('click', closemodal<?php echo $r['id_post'] ?>)
+        window.addEventListener('click', clickOutside<?php echo $r['id_post'] ?>)
+
+        function openmodal<?php echo $r['id_post'] ?>(){
+            modalEditdel<?php echo $r['id_post'] ?>.style.display = 'block'
+        }
+
+        function closemodal<?php echo $r['id_post'] ?>(){
+            modalEditdel<?php echo $r['id_post'] ?>.style.display = 'none'
+        }
+
+        function clickOutside<?php echo $r['id_post'] ?>(e){
+            if(e.target == modalEditdel<?php echo $r['id_post'] ?>){
+                modalEditdel<?php echo $r['id_post'] ?>.style.display = 'none'
+            }
+        }
+    </script>
+    <?php }?>
+
     <script src="js/index.js"></script>
-    <script src="js/editpost.js"></script>
-    <script src="js/delpost.js"></script>
 </body>
 </html>

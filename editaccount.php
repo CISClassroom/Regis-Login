@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+    $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
         // get parameters from update
     $id_user = $_SESSION['id'];
     $username = $_POST['username'];
