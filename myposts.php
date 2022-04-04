@@ -124,14 +124,13 @@
     <div id="delpostmodal<?php echo $r['id_post'] ?>" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span id="closeBtndel<?php echo $r['id_post'] ?>" class="closeBtn">&times;</span>
+                <span id="" class="closeBtndel<?php echo $r['id_post'] ?> closeBtn">&times;</span>
                 <h2>Delete Post</h2>
             </div><br>
             <div class="modal-delpost-body">
                 <h3>Do you want to delete the post?</h3><br>
                 <div class="delpost-icon">
                     <button type="submit" class="del-icon" formaction="delpost.php">Delete</button>
-                    <button class="del-icon">Cancel</button>
                 </div>
             </div>
         </div>
@@ -142,7 +141,7 @@
     <script>
         var modalEditdel<?php echo $r['id_post'] ?> = document.querySelector('#delpostmodal<?php echo $r['id_post'] ?>')
         var modalBtndel<?php echo $r['id_post'] ?> = document.querySelector('#btn-deletepost<?php echo $r['id_post'] ?>')
-        var closeBtndel<?php echo $r['id_post'] ?> = document.querySelector('#closeBtndel<?php echo $r['id_post'] ?>')
+        var closeBtndel<?php echo $r['id_post'] ?> = document.querySelector('.closeBtndel<?php echo $r['id_post'] ?>')
 
         modalBtndel<?php echo $r['id_post'] ?>.addEventListener('click', openmodal<?php echo $r['id_post'] ?>)
         closeBtndel<?php echo $r['id_post'] ?>.addEventListener('click', closemodal<?php echo $r['id_post'] ?>)
