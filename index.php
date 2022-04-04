@@ -88,8 +88,8 @@
         <i class="material-icons">post_add</i>
     </button>
     
-    <div id="addpostmodal" class="modal-addpost">
-        <div class="modal-addpost-content">
+    <div id="addpostmodal" class="modal">
+        <div class="modal-content">
             <div class="modal-header">
                 <span class="closeBtn">&times;</span>
                 <h2>Add Post</h2>

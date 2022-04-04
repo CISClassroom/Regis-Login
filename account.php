@@ -74,13 +74,16 @@
         <?php }?>
     </div>
 
-    <div id="editaccountmodal" class="modal-account">
-        <div class="modal-account-header">
+    <div id="editaccountmodal" class="modal">
+        <div class="modal-content">
+            <div class="modal-account-header">
 
+            </div>
+            <div class="modal-account-body">
+    
+            </div>
         </div>
-        <div class="modal-account-body">
-            
-        </div>
+        
     </div>
 
     <script src="js/index.js"></script>
