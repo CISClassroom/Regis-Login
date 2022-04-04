@@ -1,6 +1,6 @@
 # Hi there, we are ฮั่นแน่- aka [youtube] 👋 
 
-## I'm a Boyfriend, Developer, and Teacher(Maybe)!!
+## We're Developer, and Teacher(Maybe)!!
 
 - 🔭 Check out my VS Code course: [Become A VS Code SuperHero!][course]!
 - 🌱 We're currently learning everything 🤣
