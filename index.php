@@ -89,7 +89,7 @@
     </button>
     
     <div id="addpostmodal" class="modal-addpost">
-        <div class="modal-content">
+        <div class="modal-addpost-content">
             <div class="modal-header">
                 <span class="closeBtn">&times;</span>
                 <h2>Add Post</h2>
