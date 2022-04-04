@@ -130,7 +130,10 @@
             <div class="modal-delpost-body">
                 <h3>Do you want to delete the post?</h3><br>
                 <div class="delpost-icon">
-                    <button type="submit" class="del-icon" formaction="delpost.php">Delete</button>
+                    <form action="deletepost.php" method="post">
+                    <input class="del-icon" type="hidden" name="id_post" value="<?php echo $r['id_post'];?>">
+                    <button class="del-icon" name="delete" type="submit">Delete</button>
+                    </form>
                 </div>
             </div>
         </div>
