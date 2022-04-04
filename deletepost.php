@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $link = mysqli_connect('localhost', 'root', '', 'roitip_db') or die ('Ewwwwwwwww.');
+    $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db') or die ('Ewwwwwwwww.');
     $id_user = $_SESSION['id'];
     $id_post = $_POST['id_post'];
 

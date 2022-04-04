@@ -316,19 +316,14 @@ body{
     display: flex;
 }
 .del-icon{
-    width: 10%;
-    height: 7%;
-
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
     color: #ffffff;
 
     background: #523e7d;
-    border: 5px solid #ffffff;
-    border-radius: 30px;
-    text-align: center;
-    text-decoration: none;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
 }
 .del-icon:hover{
     color: #523e7d;

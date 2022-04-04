@@ -12,7 +12,7 @@
 <body>
     <?php
         session_start();
-        $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
+        $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
         // get data to display                    
         $id_user = $_SESSION['id'];
         $sql = "SELECT * FROM post as p, user as u where id_user='$id_user' and u.id = '$id_user'";
@@ -127,12 +127,12 @@
                 <span id="" class="closeBtndel<?php echo $r['id_post'] ?> closeBtn">&times;</span>
                 <h2>Delete Post</h2>
             </div><br>
-            <div class="modal-delpost-body">
+            <div class="modal-body">
                 <h3>Do you want to delete the post?</h3><br>
                 <div class="delpost-icon">
                     <form action="deletepost.php" method="post">
-                    <input class="del-icon" type="hidden" name="id_post" value="<?php echo $r['id_post'];?>">
-                    <button class="del-icon" name="delete" type="submit">Delete</button>
+                        <input type="hidden" name="id_post" value="<?php echo $r['id_post'];?>">
+                        <button class="del-icon" name="delete" type="submit">Delete</button>
                     </form>
                 </div>
             </div>

@@ -67,7 +67,6 @@
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
                 <div class="signUserPass">
                     <span class="text-sign">Username</span>
-                    <a href="forgotpassword/Forgotusername.html" class="link-forgot">Forgot Username?</a>
                 </div>
                 <br><br><br>
                 <input type="text" name="Un" class="box-login" required><br><br>

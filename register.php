@@ -60,7 +60,7 @@
     }
 
     $link = mysqli_connect("localhost", "root", "87654321", "roitip_db") or die("Unable to connnect");
-    $sql = "INSERT INTO user VALUES (null, '$username', '$passmd', '$email', '$question', '$answer')";
+    $sql = "INSERT INTO user VALUES (null, '$username', '$passmd', '$email', '$question', '$answer', '')";
     $result = mysqli_query($link, $sql);
 
     if(!$result)
