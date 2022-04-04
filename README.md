@@ -9,19 +9,14 @@
 ### Connect with us:
 
 [![website](./img/facebook.svg)](https://www.facebook.com/nattapon.wongpoomee)
-[![website](./img/globe-dark.svg)](https://codestackr.com#gh-dark-mode-only)
 &nbsp;&nbsp;
 [![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100007749335246)
-[![website](./img/youtube-dark.svg)](https://youtube.com/codestackr#gh-dark-mode-only)
 &nbsp;&nbsp;
 [![website](./img/facebook.svg)](https://www.facebook.com/CPT.C4P741N)
-[![website](./img/twitter-dark.svg)](https://twitter.com/codestackr#gh-dark-mode-only)
 &nbsp;&nbsp;
 [![website](./img/facebook.svg)](https://www.facebook.com/nanping.nakharin)
-[![website](./img/linkedin-dark.svg)](https://linkedin.com/in/codeSTACKr#gh-dark-mode-only)
 &nbsp;&nbsp;
 [![website](./img/facebook.svg)](https://www.facebook.com/profile.php?id=100009337702555)
-[![website](./img/instagram-dark.svg)](https://instagram.com/codeSTACKr#gh-dark-mode-only)
 
 ### Languages and Tools:
 
