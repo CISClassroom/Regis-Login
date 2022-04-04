@@ -268,10 +268,27 @@ body{
     border: 5px solid #ffffff;
     border-radius: 30px;
 }
+.button-addpost:hover{
+    color: #523e7d;
+    background: #FFFFFF;
+}
 .delpost-icon{
     display: flex;
 }
-.button-addpost:hover{
+.del-icon{
+    width: 10%;
+    height: 7%;
+
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ffffff;
+
+    background: #523e7d;
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+}
+.del-icon:hover{
     color: #523e7d;
     background: #FFFFFF;
 }

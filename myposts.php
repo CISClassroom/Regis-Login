@@ -97,14 +97,11 @@
                 <h2>Delete Post</h2>
             </div><br>
             <div class="modal-delpost-body">
-                <h3>Do you want to delete the post?</h3>
+                <h3>Do you want to delete the post?</h3><br>
                 <div class="delpost-icon">
-                    <form action="deletepost.php" method="post">
-                        <button type="submit" class="">Delete</button>
-                    </form>
-                    <button class="">Cancel</button> 
+                    <button type="submit" class="del-icon" formaction="delpost.php">Delete</button>
+                    <button class="del-icon">Cancel</button>
                 </div>
-                
             </div>
         </div>
     </div>
