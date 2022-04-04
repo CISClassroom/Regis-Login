@@ -64,9 +64,9 @@
         <?php foreach($res as $r){ ?>
         <div class="box">
         <!--display post from database-->
-            <h5>Username: <?php echo $r['username'];?></h5>
-            <h5>Email: <?php echo $r['email']; ?></h5>
-            <h5>Bio: <br><?php echo $r['bio']; ?></h5><br>
+            <h3>Username: <?php echo $r['username'];?></h3>
+            <h3>Email: <?php echo $r['email']; ?></h3>
+            <h3>Bio: <br><?php echo $r['bio']; ?></h3><br>
             <div class="edit-del">
                 <button id="btn-editaccount" class="edit"><i class="material-icons">edit</i></button>
             </div>
@@ -88,7 +88,7 @@
                     <input type="text" name="email" class="textboxedit" value="<?php echo $r['email']; ?>">
                     <h3>Bio</h3>
                     <textarea name="bio" class="textarea-edit" rows="13" maxlength="255"><?php echo $r['bio']; ?></textarea><br>
-                    <button type="submit" class="save-edit-icon">Save</button>
+                    <button type="submit" name="change_data" class="save-edit-icon">Save</button>
                 </form>
             </div>
         </div>
