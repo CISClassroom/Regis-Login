@@ -12,7 +12,7 @@
 <body>
     <?php
         session_start();
-        $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
+        $link = mysqli_connect('localhost', 'root', '', 'roitip_db');
         // get data to display                    
         $id_user = $_SESSION['id'];
         $sql = "SELECT * FROM post as p, user as u where id_user='$id_user' and u.id = '$id_user'";
@@ -83,10 +83,10 @@
             </div><br>
             <div class="modal-body">
                 
-                <form action="uploadpost.php" method="post">
+                <form action="editpost.php?id_post=<?php echo $r['id_post'];?>" method="post">
                     <input type="text" name="title" class="textbox-addpost" placeholder="title" value="<?php echo $r['title']; ?>"><br>
                     <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"><?php echo $r['content'];?></textarea><br>
-                    <button type="submit" class="button-addpost">Add</button>
+                    <button type="submit" name="change" class="button-addpost">Change</button>
                 </form>
                 
             </div>
