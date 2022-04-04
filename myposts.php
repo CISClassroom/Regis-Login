@@ -105,6 +105,7 @@
             </div>
         </div>
     </div>
+    
     <script src="js/index.js"></script>
     <script src="js/editpost.js"></script>
     <script src="js/delpost.js"></script>

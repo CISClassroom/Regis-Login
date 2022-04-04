@@ -83,12 +83,12 @@
             <div class="modal-account-body">
                 <form action="editaccount.php" method="post">
                     <h3>Username</h3>
-                    <input type="text" name="username" id="" value="<?php echo $r['username'];?>">
+                    <input type="text" name="username" class="textboxedit" value="<?php echo $r['username'];?>">
                     <h3>Email</h3>
-                    <input type="text" name="email" id="" value="<?php echo $r['email']; ?>">
+                    <input type="text" name="email" class="textboxedit" value="<?php echo $r['email']; ?>">
                     <h3>Bio</h3>
-                    <textarea name="bio" id="" cols="30" rows="10"><?php echo $r['bio']; ?></textarea><br>
-                    <button type="submit" class="">Save</button>
+                    <textarea name="bio" class="textarea-edit" rows="13" maxlength="255"><?php echo $r['bio']; ?></textarea><br>
+                    <button type="submit" class="save-edit-icon">Save</button>
                 </form>
             </div>
         </div>

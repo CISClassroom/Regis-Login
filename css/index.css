@@ -272,6 +272,46 @@ body{
     color: #523e7d;
     background: #FFFFFF;
 }
+.textboxedit{
+    width: 40%;
+    height: 10%;
+
+    font-style: normal;
+    font-size: 20px;
+    line-height: 65px;
+
+    border-radius: 10px;
+    outline: none;
+}
+.textarea-edit{
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-size: 20px;
+
+    border-radius: 10px;
+    outline: none;
+}
+.save-edit-icon{
+    width: 10%;
+    height: 7%;
+
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ffffff;
+
+    background: #523e7d;
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+}
+.save-edit-icon:hover{
+    color: #523e7d;
+    background: #FFFFFF;
+}
 .delpost-icon{
     display: flex;
 }
