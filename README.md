@@ -1,4 +1,4 @@
-# Hi there, we are ฮั่นแน่- aka [youtube] 👋 
+# Hi there, we are ฮั่นแน่- aka CIS 👋 
 
 ## We're Developer, and Teacher(Maybe)!!
 
