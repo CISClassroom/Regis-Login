@@ -87,12 +87,11 @@
                     <h3>Email</h3>
                     <input type="text" name="email" id="" value="<?php echo $r['email']; ?>">
                     <h3>Bio</h3>
-                    <textarea name="" id="" cols="30" rows="10"><?php echo $r['bio']; ?></textarea><br>
+                    <textarea name="bio" id="" cols="30" rows="10"><?php echo $r['bio']; ?></textarea><br>
                     <button type="submit" class="">Save</button>
                 </form>
             </div>
         </div>
-        
     </div>
 
     <script src="js/index.js"></script>
