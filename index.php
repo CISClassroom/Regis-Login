@@ -25,13 +25,13 @@
             
         $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
         // get data to display                    
-        $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id";
+        $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id order by p.id_post desc";
         $res = mysqli_query($link, $sql);
         //$id_user = $_GET['id'];
 
     ?>
 
-    <div class="sidebar">
+<div class="sidebar">
         <div class="logo-content">
             <div class="logo">
                 <div class="logo-name">Roitip</div>
@@ -89,20 +89,21 @@
     </button>
     
     <div id="addpostmodal" class="modal-addpost">
-        <div class="modal-addpost-content">
-            <div class="modal-addpost-header">
+        <div class="modal-content">
+            <div class="modal-header">
                 <span class="closeBtn">&times;</span>
                 <h2>Add Post</h2>
             </div><br>
-            <div class="modal-addpost-body">
+            <div class="modal-body">
                 <form action="uploadpost.php" method="post">
                     <input type="text" name="title" class="textbox-addpost" placeholder="title"><br>
                     <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"></textarea><br>
-                    <button type="submit" class="button-addpost">Add</button>
+                    <button type="submit" name="add_post" class="button-addpost">Add</button>
                 </form>
             </div>
         </div>
     </div>
     <script src="js/index.js"></script>
+
 </body>
 </html>
