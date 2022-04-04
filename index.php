@@ -11,25 +11,25 @@
 </head>
 <body>
     <!--use php call database-->
-<?php
-            session_start();
-            if(isset($_SESSION['id'])){
+    <?php
+        session_start();
+        if(isset($_SESSION['id'])){
 
-            } else {
-                echo '<script type="text/javascript">';
-                echo "alert('Please go to Login!');";
-                echo "document.location = 'login.php'";
-                echo '</script>';
-                // header('Location:Login.php');
-            }
+        } else {
+            echo '<script type="text/javascript">';
+            echo "alert('Please go to Login!');";
+            echo "document.location = 'login.php'";
+            echo '</script>';
+            // header('Location:Login.php');
+        }
             
-            $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
-    // get data to display                    
-            $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id";
-            $res = mysqli_query($link, $sql);
-            //$id_user = $_GET['id'];
+        $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
+        // get data to display                    
+        $sql = "SELECT * FROM post as p, user as u where p.id_user=u.id";
+        $res = mysqli_query($link, $sql);
+        //$id_user = $_GET['id'];
 
-?>
+    ?>
 
     <div class="sidebar">
         <div class="logo-content">
@@ -69,19 +69,11 @@
             </li>
         </ul>
     </div>
-    <script>
-        let btn = document.querySelector('#btn');
-        let sidebar = document.querySelector('.sidebar');
-
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-    </script>
        
-        <div class="main-content">
+    <div class="main-content">
         <?php foreach($res as $r){ ?>
             <div class="box">
-    <!--    display post from database-->
+                <!--display post from database-->
                 <h4><?php echo $r['username'];?></h4>
                 <h5><?php echo $r['title']; ?></h5>
                 <br>
@@ -89,7 +81,28 @@
                 <br>
             </div>
         <?php }?>
-        </div> 
-
+        
+    </div>
+    
+    <button id="btn-addpost" class="addpost">
+        <i class="material-icons">post_add</i>
+    </button>
+    
+    <div id="addpostmodal" class="modal-addpost">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>Add Post</h2>
+            </div><br>
+            <div class="modal-body">
+                <form action="uploadpost.php" method="post">
+                    <input type="text" name="title" class="textbox-addpost" placeholder="title"><br>
+                    <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"></textarea><br>
+                    <button type="submit" class="button-addpost">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
