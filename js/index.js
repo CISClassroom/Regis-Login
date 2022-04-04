@@ -7,7 +7,7 @@ btn.onclick = function(){
 
 var modalAdd = document.querySelector('#addpostmodal')
 var modalBtnadd = document.querySelector('#btn-addpost')
-var closeBtnadd = document.querySelector('.closeBtn')
+var closeBtnadd = document.querySelector('#closeBtnaddpost')
 
 modalBtnadd.addEventListener('click', openmodal)
 closeBtnadd.addEventListener('click', closemodal)

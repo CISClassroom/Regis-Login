@@ -91,7 +91,7 @@
     <div id="addpostmodal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="closeBtn">&times;</span>
+                <span id="closeBtnaddpost" class="closeBtn">&times;</span>
                 <h2>Add Post</h2>
             </div><br>
             <div class="modal-body">

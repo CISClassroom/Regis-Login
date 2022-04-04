@@ -1,6 +1,6 @@
 var modalEditacc = document.querySelector('#editaccountmodal')
 var modalBtnacc = document.querySelector('#btn-editaccount')
-var closeBtnacc = document.querySelector('.closeBtnacc')
+var closeBtnacc = document.querySelector('#closeBtnacc')
 
 modalBtnacc.addEventListener('click', openmodal)
 closeBtnacc.addEventListener('click', closemodal)

@@ -74,25 +74,42 @@
         <?php }?>
     </div>
     
-    <button id="btn-addpost" class="addpost">
-        <i class="material-icons">post_add</i>
-    </button>
-    
-    <div id="addpostmodal" class="modal-addpost">
+    <div id="editpostmodal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="closeBtn">&times;</span>
+                <span id="closeBtnpost" class="closeBtn">&times;</span>
                 <h2>Add Post</h2>
             </div><br>
             <div class="modal-body">
                 <form action="uploadpost.php" method="post">
-                    <input type="text" name="title" class="textbox-addpost" placeholder="title"><br>
-                    <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"></textarea><br>
+                    <input type="text" name="title" class="textbox-addpost" placeholder="title" value="<?php echo $r['title']; ?>"><br>
+                    <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"><?php echo $r['content'];?></textarea><br>
                     <button type="submit" class="button-addpost">Add</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <div id="delpostmodal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="closeBtndel" class="closeBtn">&times;</span>
+                <h2>Delete Post</h2>
+            </div><br>
+            <div class="modal-delpost-body">
+                <h3>Do you want to delete the post?</h3>
+                <div class="delpost-icon">
+                    <form action="deletepost.php" method="post">
+                        <button type="submit" class="">Delete</button>
+                    </form>
+                    <button class="">Cancel</button> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <script src="js/index.js"></script>
+    <script src="js/editpost.js"></script>
+    <script src="js/delpost.js"></script>
 </body>
 </html>
