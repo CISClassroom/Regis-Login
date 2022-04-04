@@ -1,6 +1,6 @@
 # Hi there, we are ฮั่นแน่- aka CIS <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-## We're Developer, and Teacher(Maybe)!!
+## We're Developer!!
 
 - 🌱 We're currently learning everything 🤣
 
