@@ -184,7 +184,6 @@ body{
     height: 40px;
     background: #523E7D;
     color: #fff;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -195,21 +194,20 @@ body{
     color: #523e7d;
     background: #FFFFFF;
 }
-.edit-post{
+.edit{
     margin-left: 1px;
     margin-right: 1px;
     width: 40px;
     height: 40px;
     background: #523E7D;
     color: #fff;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border-radius: 50%;
     border-color: #523E7D;
 }
-.edit-post:hover{
+.edit:hover{
     color: #523e7d;
     background: #FFFFFF;
 }
@@ -226,7 +224,7 @@ body{
 
     font-family: 'Rubik', sans-serif;
 }
-.modal-content{
+.modal-addpost-content{
     color: #fff;
     background-color: #523e7d;
     margin: 10% auto;
@@ -247,7 +245,6 @@ body{
 }
 .textarea-addpost{
     width: 100%;
-    /* height: 100%; */
     resize: none;
     overflow: auto;
     margin-top: 5px;
@@ -275,6 +272,7 @@ body{
     color: #523e7d;
     background: #FFFFFF;
 }
+
 .closeBtn{
     color: #ccc;
     float: right;

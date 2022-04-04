@@ -89,12 +89,12 @@
     </button>
     
     <div id="addpostmodal" class="modal-addpost">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div class="modal-addpost-content">
+            <div class="modal-addpost-header">
                 <span class="closeBtn">&times;</span>
                 <h2>Add Post</h2>
             </div><br>
-            <div class="modal-body">
+            <div class="modal-addpost-body">
                 <form action="uploadpost.php" method="post">
                     <input type="text" name="title" class="textbox-addpost" placeholder="title"><br>
                     <textarea class="textarea-addpost" name="content" rows="15" placeholder="content"></textarea><br>

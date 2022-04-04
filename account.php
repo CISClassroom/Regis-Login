@@ -14,7 +14,7 @@
     session_start();
         $id_user = $_SESSION['id'];
         $link = mysqli_connect('localhost', 'root', '87654321', 'roitip_db');
-// get data to display                    
+        // get data to display                    
         $sql = "SELECT * FROM user as u where $id_user=u.id";
         $res = mysqli_query($link, $sql);
         //$id_user = $_GET['id'];
@@ -59,23 +59,30 @@
             </li>
         </ul>
     </div>
-    <script>
-        let btn = document.querySelector('#btn');
-        let sidebar = document.querySelector('.sidebar');
-
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-    </script>
+    
     <div class="main-content">
-    <?php foreach($res as $r){ ?>
+        <?php foreach($res as $r){ ?>
         <div class="box">
-<!--display post from database-->
+        <!--display post from database-->
             <h5>Username: <?php echo $r['username'];?></h5>
             <h5>Email: <?php echo $r['email']; ?></h5>
-            <h5>Bio: <br><?php echo $r['bio']; ?></h5>
+            <h5>Bio: <br><?php echo $r['bio']; ?></h5><br>
+            <div class="edit-del">
+                <button id="btn-editaccount" class="edit"><i class="material-icons">edit</i></button>
+            </div>
         </div>
-    <?php }?>
+        <?php }?>
     </div>
+
+    <div id="editaccountmodal" class="modal-account">
+        <div class="modal-account-header">
+
+        </div>
+        <div class="modal-account-body">
+            
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

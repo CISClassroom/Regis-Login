@@ -5,7 +5,7 @@ btn.onclick = function(){
     sidebar.classList.toggle("active");
 }
 
-var modal = document.querySelector('#addpostmodal')
+var modalAdd = document.querySelector('#addpostmodal')
 var modalBtn = document.querySelector('#btn-addpost')
 var closeBtn = document.querySelector('.closeBtn')
 
@@ -14,15 +14,15 @@ closeBtn.addEventListener('click', closemodal)
 window.addEventListener('click', clickOutside)
 
 function openmodal(){
-    modal.style.display = 'block'
+    modalAdd.style.display = 'block'
 }
 
 function closemodal(){
-    modal.style.display = 'none'
+    modalAdd.style.display = 'none'
 }
 
 function clickOutside(e){
-    if(e.target == modal){
-        modal.style.display = 'none'
+    if(e.target == modalAdd){
+        modalAdd.style.display = 'none'
     }
 }
