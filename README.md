@@ -2,7 +2,6 @@
 
 ## We're Developer, and Teacher(Maybe)!!
 
-- 🔭 Check out my VS Code course: [Become A VS Code SuperHero!][course]!
 - 🌱 We're currently learning everything 🤣
 
 
