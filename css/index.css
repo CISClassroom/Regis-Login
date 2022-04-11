@@ -148,6 +148,7 @@ body{
     background-color: white;
 }
 .comment{
+    display: none;
     color: #000;
     text-decoration: none;
 }
