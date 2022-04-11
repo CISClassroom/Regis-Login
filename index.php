@@ -80,16 +80,7 @@
                 <p><?php echo $r['content'];?></p>
                 <br>
                 <hr>
-                <!-- <button id="" class=""><i class="material-icons">comment</i>Comment</button> -->
                 <a href="#" class="comment"><i class="material-icons">forum</i> Comment</a>
-                <div class="box-comment">
-                    <form action="" method="post">
-                        <input type="hidden" name="id_post" value="<?php echo $r['id_post']; ?>">
-                        <input type="hidden" name="id_user" value="<?php echo $r['id_user']; ?>">
-                        <input type="text" name="comment" id="">
-                        <button type="submit" name="upload">Add</button>
-                    </form>
-                </div>
             </div>
         <?php }?>
         
